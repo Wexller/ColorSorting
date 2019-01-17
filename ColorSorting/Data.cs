@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace ColorSorting
 {
@@ -85,11 +86,19 @@ namespace ColorSorting
             char secondSymbol = 'С';
             char thirdSymbol = 'К';
 
-            //Если в проверяемой переменной нет нужных символов, то делается исключение
-            if((checkVar.IndexOf(firstSymbol) < 0) && (checkVar.IndexOf(secondSymbol) < 0) && (checkVar.IndexOf(thirdSymbol) < 0))
+            try
             {
-                throw new ArgumentException("Переменная не содержит символов З, С и К");
+                //Если в проверяемой переменной нет нужных символов, то делается исключение
+                if ((checkVar.IndexOf(firstSymbol) < 0) && (checkVar.IndexOf(secondSymbol) < 0) && (checkVar.IndexOf(thirdSymbol) < 0))
+                {
+                    throw new ArgumentException("Переменная не содержит символов З, С и К");
+                }
             }
+            catch
+            {
+                MessageBox.Show("Поле не содержит символов З, С и К. Повторите ввод", "Предупреждение");
+            }
+
         }
 
     }

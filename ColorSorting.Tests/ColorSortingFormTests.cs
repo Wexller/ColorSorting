@@ -30,7 +30,7 @@ namespace ColorSorting.Tests
         /// <summary>
         /// Тест, проверяющий запись в поле ObjectsFromForm класса Data
         /// </summary>
-        public void SetData_WhriteObjectsFieldInData_FieldsAreEqual()
+        public void SetData_RecordingObjectsFieldInData_RecordingSuccessful()
         {
                         
             Assert.AreEqual(objectsField, _dataStorage.ObjectsFromForm);
@@ -41,7 +41,7 @@ namespace ColorSorting.Tests
         /// <summary>
         /// Тест, проверяющий запись в поле FirstObject класса Data
         /// </summary>
-        public void SetData_WhriteFirstObfectColorInData_FieldsAreEqual()
+        public void SetData_RecordingFirstObfectColorInData_RecordingSuccessful()
         {
 
             Assert.AreEqual(firstObjectColor, _dataStorage.FirstObject);
@@ -52,7 +52,7 @@ namespace ColorSorting.Tests
         /// <summary>
         /// Тест, проверяющий запись в поле SecondObject класса Data
         /// </summary>
-        public void SetData_WhriteSecondObfectColorInData_FieldsAreEqual()
+        public void SetData_RecordingSecondObfectColorInData_RecordingSuccessful()
         {
 
             Assert.AreEqual(secondObjectColor, _dataStorage.SecondObject);
@@ -63,7 +63,7 @@ namespace ColorSorting.Tests
         /// <summary>
         /// Тест, проверяющий запись в поле ThirdObgect класса Data
         /// </summary>
-        public void SetData_WhriteThirdObfectColorInData_FieldsAreEqual()
+        public void SetData_RecordingThirdObfectColorInData_RecordingSuccessful()
         {
 
             Assert.AreEqual(thirdObjectColor, _dataStorage.ThirdObgect);

@@ -32,17 +32,18 @@ namespace ColorSorting
         /// <summary>
         /// Метод, записывающий данные
         /// </summary>
+        /// <param name="dataObject">Ссылка на объект класса Data</param>
         /// <param name="textFromField">Строка объектов</param>
         /// <param name="firstColor">Первый цвет отношения</param>
         /// <param name="secondColor">Второй цвет отношения</param>
         /// <param name="thirdColor">Третий цвет отношения</param>
-        private void SetData(string textFromField, string firstColor, string secondColor, string thirdColor)
+        public void SetData(Data dataObject, string textFromField, string firstColor, string secondColor, string thirdColor)
         {
             //Запись данных из полей в Data
-            _dataStorage.ObjectsFromForm = textFromField;    
-            _dataStorage.FirstObject = firstColor;
-            _dataStorage.SecondObject = secondColor;
-            _dataStorage.ThirdObgect = thirdColor;
+            dataObject.ObjectsFromForm = textFromField;
+            dataObject.FirstObject = firstColor;
+            dataObject.SecondObject = secondColor;
+            dataObject.ThirdObgect = thirdColor;
         }
 
         /// <summary>
@@ -51,7 +52,7 @@ namespace ColorSorting
         /// <param name="firstObject">Первый объект отношения</param>
         /// <param name="firstObject">Второй объект отношения</param>
         /// <param name="firstObject">Третий объект отношения</param>
-        private bool CheckObjectColors(int firstObject, int secondObject, int thirdObject)
+        public bool CheckObjectColors(int firstObject, int secondObject, int thirdObject)
         {
             if((firstObject != secondObject) &&
                (firstObject != thirdObject) &&
@@ -69,7 +70,7 @@ namespace ColorSorting
         /// <summary>
         /// Метод, проверяющий поле ввода на пустоту
         /// </summary>
-        private bool CheckObjectsField(string checkedText)
+        public bool CheckObjectsField(string checkedText)
         {
             if (checkedText != "")
             {
@@ -93,7 +94,7 @@ namespace ColorSorting
             //Если поле заполенено и нет одинаковых отношений, то записывам данные и выполняем сортировку с записью в поле вывода
             if (CheckObjectsField(ObjectsField.Text) && CheckObjectColors(FirstObfectColor.SelectedIndex, SecondObjectColor.SelectedIndex, ThirdObjectColor.SelectedIndex))
              {
-                    SetData(ObjectsField.Text, FirstObfectColor.Text, SecondObjectColor.Text, ThirdObjectColor.Text);
+                    SetData(_dataStorage, ObjectsField.Text, FirstObfectColor.Text, SecondObjectColor.Text, ThirdObjectColor.Text);
                     ResultBox.Text = _sortingObjects.ObjectsSorting(_dataStorage.ObjectsFromForm, _dataStorage.FirstObject, _dataStorage.SecondObject, _dataStorage.ThirdObgect);
              }
                        
@@ -158,5 +159,6 @@ namespace ColorSorting
         {
             ObjectsField.Text = ObjectsField.Text + "К";
         }
+
     }
 }

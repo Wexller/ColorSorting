@@ -1,47 +1,47 @@
 ﻿namespace ColorSorting
 {
-    class Sorting
+    public class Sorting
     {
         /// <summary>
         /// Поле объектов для сортировки
         /// </summary>
-        private string _objects;
+        public string _objects;
 
         /// <summary>
         /// Зеленая переменная отношения
         /// </summary>
-        private string _greenObject;
+        public string _greenObject;
 
         /// <summary>
         /// Синяя переменная отношения
         /// </summary>
-        private string _blueObject;
+        public string _blueObject;
 
         /// <summary>
         /// Красная переменная отношения
         /// </summary>
-        private string _redObject;
+        public string _redObject;
 
         /// <summary>
         /// Позиия зелёной переменной отношения
         /// </summary>
-        private int _greenObjectPosition;
+        public int _greenObjectPosition;
 
         /// <summary>
         /// Позиия синей переменной отношения
         /// </summary>
-        private int _blueObjectPosition;
+        public int _blueObjectPosition;
 
         /// <summary>
         /// Позиия красной переменной отношения
         /// </summary>
-        private int _redObjectPosition;
+        public int _redObjectPosition;
 
         /// <summary>
         /// Метод, переносящий значения объеков в поле класса
         /// </summary>
         /// <param name="objects">Переменная объектов</param>
-        private void SetObjects(string objects)
+        public void SetObjects(string objects)
         {
             _objects = objects;
         }
@@ -52,7 +52,7 @@
         /// <param name="green">Зеленая переменная отношения</param>
         /// <param name="blue">Синяя переменная отношения</param>
         /// <param name="red">Красная переменная отношения</param>
-        private void SetColorsOfObjects(string green, string blue, string red)
+        public void SetColorsOfObjects(string green, string blue, string red)
         {
             _greenObject = green;
             _blueObject = blue;
@@ -65,7 +65,7 @@
         /// <param name="firstObject">Первая определяющая переменная</param>
         /// <param name="secondObject">Вторая определяющая переменная</param>
         /// <param name="thirdObject">Третья определяющая переменная</param>
-        private void GetCondition(string firstObject, string secondObject, string thirdObject)
+        public void GetCondition(string firstObject, string secondObject, string thirdObject)
         {
             //Начальное значение позиции
             int posotion = 1;
@@ -81,7 +81,7 @@
         /// </summary>
         /// <param name="checkObject">Текущая определяющая переменная</param>
         /// <param name="position">Позиция переменной</param>
-        private void GetConditionHelper(string checkObject, int position)
+        public void GetConditionHelper(string checkObject, int position)
         {
             switch (checkObject)
             {
@@ -96,12 +96,12 @@
                     break;
             }
         }
-        
+
         /// <summary>
         /// Метод, проверяющий цвет объекта
         /// </summary>
         /// <param name="chekingObject">Проверяемый цвет</param>
-        private int CheckObjectColor(char chekingObject)
+        public int CheckObjectColor(char chekingObject)
         {
             //Большое значение для остальных объектов
             int bigValue = 100;
