@@ -53,9 +53,11 @@
             // 
             // ObjectsField
             // 
+            this.ObjectsField.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ObjectsField.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ObjectsField.Location = new System.Drawing.Point(14, 56);
             this.ObjectsField.Name = "ObjectsField";
+            this.ObjectsField.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ObjectsField.Size = new System.Drawing.Size(379, 26);
             this.ObjectsField.TabIndex = 0;
             this.ObjectsField.Text = "ССЗСКЗЗЗККСЗССКЗ";
@@ -136,9 +138,11 @@
             // 
             // ResultBox
             // 
+            this.ResultBox.BackColor = System.Drawing.SystemColors.HighlightText;
             this.ResultBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.ResultBox.Location = new System.Drawing.Point(31, 294);
             this.ResultBox.Name = "ResultBox";
+            this.ResultBox.ReadOnly = true;
             this.ResultBox.Size = new System.Drawing.Size(379, 26);
             this.ResultBox.TabIndex = 12;
             // 
