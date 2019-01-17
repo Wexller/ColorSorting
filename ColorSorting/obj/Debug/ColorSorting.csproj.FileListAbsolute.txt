@@ -1,0 +1,10 @@
+C:\Users\Wexller\source\repos\ColorSorting\ColorSorting\bin\Debug\ColorSorting.exe.config
+C:\Users\Wexller\source\repos\ColorSorting\ColorSorting\bin\Debug\ColorSorting.exe
+C:\Users\Wexller\source\repos\ColorSorting\ColorSorting\bin\Debug\ColorSorting.pdb
+C:\Users\Wexller\source\repos\ColorSorting\ColorSorting\obj\Debug\ColorSorting.csprojAssemblyReference.cache
+C:\Users\Wexller\source\repos\ColorSorting\ColorSorting\obj\Debug\ColorSorting.ColorSortingForm.resources
+C:\Users\Wexller\source\repos\ColorSorting\ColorSorting\obj\Debug\ColorSorting.Properties.Resources.resources
+C:\Users\Wexller\source\repos\ColorSorting\ColorSorting\obj\Debug\ColorSorting.csproj.GenerateResource.cache
+C:\Users\Wexller\source\repos\ColorSorting\ColorSorting\obj\Debug\ColorSorting.csproj.CoreCompileInputs.cache
+C:\Users\Wexller\source\repos\ColorSorting\ColorSorting\obj\Debug\ColorSorting.exe
+C:\Users\Wexller\source\repos\ColorSorting\ColorSorting\obj\Debug\ColorSorting.pdb
